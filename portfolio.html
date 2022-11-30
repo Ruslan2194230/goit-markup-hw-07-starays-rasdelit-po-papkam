@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Домашка7</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/main.min.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="header-container">
+        <a href="./index.html" class="header-container__logo">
+          <img src="../images/just-svg/logo-top.svg" alt="лого компании" />
+        </a>
+        <ul class="header-container__list">
+          <li class="header-container__item">
+            <a class="header-container__link" href="./index.html">Студия</a>
+          </li>
+          <li class="header-container__item">
+            <a class="header-container__link" href="./portfolio.html"
+              >Портфолио</a
+            >
+          </li>
+          <li class="header-container__item">
+            <a class="header-container__link" href="./contacts.html"
+              >Контакты</a
+            >
+          </li>
+          <ul class="top-contacts">
+            <li class="top-contacts__item">
+              <svg class="top-contacts__icon">
+                <use
+                  href="../images/sprite/symbol-defs.svg#icon-mail-image"
+                ></use>
+              </svg>
+              <a href="info@example.com" class="top-contacts__link">
+                info@eaxample.com
+              </a>
+            </li>
+            <li class="top-contacts__item">
+              <svg class="top-contacts__icon">
+                <use
+                  href="../images/sprite/symbol-defs.svg#icon-mobile-image"
+                ></use>
+              </svg>
+              <a
+                href="tel:+380960656565"
+                class="top-contacts__number top-contacts__link"
+              >
+                +380960656565
+              </a>
+            </li>
+          </ul>
+        </ul>
+      </nav>
+    </header>
+    <section class="portfolio-container">
+      <ul class="portfolio-nav__list">
+        <li class="portfolio-nav__item">
+          <a href=""><button class="portfolio-nav__button">Все</button></a>
+        </li>
+        <li class="portfolio-nav__item">
+          <a href=""
+            ><button class="portfolio-nav__button">Веб-сайты</button></a
+          >
+        </li>
+        <li class="portfolio-nav__item">
+          <a href=""
+            ><button class="portfolio-nav__button">Приложения</button></a
+          >
+        </li>
+        <li class="portfolio-nav__item">
+          <button class="portfolio-nav__button">Дизайн</button>
+        </li>
+        <li class="portfolio-nav__item">
+          <button class="portfolio-nav__button">Маркетинг</button>
+        </li>
+      </ul>
+      <div class="portfolio-grid">
+        <div class="portfolio-grid__item">
+          <div class="portfolio-grid__image">
+            <img src="../images/just-svg/technokryak.svg" alt="" />
+            <div class="portfolio-grid__background-image">
+              <p>
+                Ресурс предлагает комплексные предложения с разным уровнем
+                функционала и сервисов. Все это позволит посетителю получить
+                исчерпывающие сведения о компании или частном лице.
+              </p>
+            </div>
+          </div>
+          <p class="portfolio-grid__name">Технокряк</p>
+          <p class="portfolio-grid__description">Веб-сайт</p>
+        </div>
+        <div class="portfolio-grid__item">
+          <div class="portfolio-grid__image">
+            <img src="../images/just-svg/backetball-poster.svg" alt="" />
+            <div class="portfolio-grid__background-image">
+              <p>какой-то текст</p>
+            </div>
+          </div>
+          <p class="portfolio-grid__name">Постер New Orlean vs Golden Star</p>
+          <p class="portfolio-grid__description">Дизайн</p>
+        </div>
+        <div class="portfolio-grid__item">
+          <div class="portfolio-grid__image">
+            <img src="../images/just-svg/restaurant-poster.svg" alt="" />
+            <div class="portfolio-grid__background-image">
+              <p>
+                Ресурс предлагает комплексные предложения с разным уровнем
+                функционала и сервисов. Все это позволит посетителю получить
+                исчерпывающие сведения о компании или частном лице.
+              </p>
+            </div>
+          </div>
+          <p class="portfolio-grid__name">Ресторан Seafood</p>
+          <p class="portfolio-grid__description">Приложение</p>
+        </div>
+        <div class="portfolio-grid__item">
+          <div class="portfolio-grid__image">
+            <img src="../images/just-svg/headphones.svg" alt="" />
+            <div class="portfolio-grid__background-image">
+              <p>какой-то текст</p>
+            </div>
+          </div>
+          <p class="portfolio-grid__name">Проект Prime</p>
+          <p class="portfolio-grid__description">Маркетинг</p>
+        </div>
+        <div class="portfolio-grid__item">
+          <div class="portfolio-grid__image">
+            <img src="../images/just-svg/boxes.svg" alt="" />
+            <div class="portfolio-grid__background-image">
+              <p>какой-то текст</p>
+            </div>
+          </div>
+          <p class="portfolio-grid__name">Проект Boxes</p>
+          <p class="portfolio-grid__description">Приложение</p>
+        </div>
+        <div class="portfolio-grid__item">
+          <div class="portfolio-grid__image">
+            <img src="../images/just-svg/monoblock.svg" alt="" />
+            <div class="portfolio-grid__background-image">
+              <p>какой-то текст</p>
+            </div>
+          </div>
+          <p class="portfolio-grid__name">Inspiration has no borders</p>
+          <p class="portfolio-grid__description">веб-сайт</p>
+        </div>
+        <div class="portfolio-grid__item">
+          <div class="portfolio-grid__image">
+            <img src="../images/just-svg/book.svg" alt="" />
+            <div class="portfolio-grid__background-image">
+              <p>какой-то текст</p>
+            </div>
+          </div>
+          <p class="portfolio-grid__name">Издание Limited Edition</p>
+          <p class="portfolio-grid__description">Дизайн</p>
+        </div>
+        <div class="portfolio-grid__item">
+          <div class="portfolio-grid__image">
+            <img src="../images/just-svg/label.svg" alt="" />
+            <div class="portfolio-grid__background-image">
+              <p>какой-то текст</p>
+            </div>
+          </div>
+          <p class="portfolio-grid__name">Проект LAB</p>
+          <p class="portfolio-grid__description">Маркетинг</p>
+        </div>
+        <div class="portfolio-grid__item">
+          <div class="portfolio-grid__image">
+            <img src="../images/just-svg/laptop.svg" alt="" />
+            <div class="portfolio-grid__background-image">
+              <p>какой-то текст</p>
+            </div>
+          </div>
+          <p class="portfolio-grid__name">Growing Business</p>
+          <p class="portfolio-grid__description">Прило</p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__container">
+        <a href="" class="logo-bottom">
+          <img src="../images/just-svg/logo-bottom.svg" alt="" />
+        </a>
+        <ul class="footer__contacts-list">
+          <p class="footer__contacts-item footer-adress">
+            г. Киев, пр-т Леси Украинки, 26
+          </p>
+          <a class="footer__contacts-item footer-mail" href="info@example.com">
+            info@example.com
+          </a>
+          <a
+            class="footer__contacts-item footer-number"
+            href="tel:+380961111111"
+            >+38 099 111 11 11</a
+          >
+        </ul>
+      </div>
+      <div class="join-us">
+        <h3 class="join-us__title">Присоединяйтесь</h3>
+        <div class="social-links footer-links">
+          <button class="social-links__item-footer">
+            <a href=""
+              ><svg class="social-links__icon-footer">
+                <use
+                  href="../images/sprite/symbol-defs.svg#icon-instagram"
+                ></use></svg
+            ></a></button
+          ><button class="social-links__item-footer">
+            <a href=""
+              ><svg class="social-links__icon-footer">
+                <use
+                  href="../images/sprite/symbol-defs.svg#icon-twitter"
+                ></use></svg
+            ></a></button
+          ><button class="social-links__item-footer">
+            <a href=""
+              ><svg class="social-links__icon-footer">
+                <use
+                  href="../images/sprite/symbol-defs.svg#icon-facebook"
+                ></use></svg
+            ></a></button
+          ><button class="social-links__item-footer">
+            <a href=""
+              ><svg class="social-links__icon-footer">
+                <use
+                  href="../images/sprite/symbol-defs.svg#icon-linkedin"
+                ></use></svg
+            ></a>
+          </button>
+        </div>
+      </div>
+      <div class="subscription-container">
+        <h4 class="subscription-container__title">Подпишитесь на рассылку</h4>
+        <div class="subscription-container__form">
+          <input
+            type="text"
+            class="subscription-container__input"
+            name="name"
+            id="subscription-input"
+            placeholder="E-mail"
+          />
+          <button class="subscription-container__button" type="submit">
+            Подписаться
+
+            <svg class="subscription-container__icon">
+              <use href="../images/sprite/symbol-defs.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </footer>
+    <!-- <script src="../js/modal.js"></script> -->
+  </body>
+</html>
