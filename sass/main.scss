@@ -134,7 +134,15 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
+  // padding: 0 13.4%; я посчитал что на макете по бокам по 215пикс паддинг по бокам при 1600 ширирне то это являеться 13.4%
 }
+
+// короче пытался чтобы сохранить пропорции размещения дать проценты ну вышло так себе
+// .header-contetnt-div{
+//   display: flex;
+//   justify-content: space-between;
+// }
+
 .header-container__list {
   display: flex;
   margin-left: 93px;
@@ -206,13 +214,14 @@ span {
   flex-direction: column;
 
   width: 100%;
-  height: 600;
+  height: 600px;
 
   padding: 200px 0px;
 
-  background-image: url(./images/just-svg/hero-background.svg);
+  background-image: url(../images/just-svg/hero-background.svg);
   background-color: rgba(47, 48, 58, 0.4);
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .hero__title {
@@ -437,6 +446,8 @@ span {
 // TEAM-CONTAINER
 
 .team-container {
+  width: 100%;
+  height: auto;
   margin-top: 94px;
   // padding-bottom: 94px;
   padding: 94px auto;
@@ -453,7 +464,7 @@ span {
 .team-container__list {
   display: flex;
 
-  width: 73.15%;
+  // width: 73.15%;
   height: auto;
   margin: 0 auto;
   padding: 50px;
