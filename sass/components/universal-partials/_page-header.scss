@@ -1,0 +1,75 @@
+.header-container {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // padding: 0 13.4%; я посчитал что на макете по бокам по 215пикс паддинг по бокам при 1600 ширирне то это являеться 13.4%
+}
+
+// короче пытался чтобы сохранить пропорции размещения дать проценты ну вышло так себе
+// .header-contetnt-div{
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+.header-container__list {
+  display: flex;
+  margin-left: 93px;
+  align-items: center;
+  justify-content: center;
+}
+.header-container__item {
+  position: relative;
+  margin-right: 50px;
+}
+
+.header-container__link {
+  font-weight: 500;
+
+  &:hover,
+  &:active {
+    color: $hover-color;
+    fill: $hover-color;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: $blue-color;
+
+    transform: scaleX(0);
+    transition: 250ms;
+  }
+  &:hover:after {
+    transform: scaleX(1);
+  }
+}
+.top-contacts {
+  display: flex;
+  margin-left: 331px;
+  color: $main-gray-color;
+}
+.top-contacts__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.top-contacts__icon {
+  fill: $main-gray-color;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+
+  &:hover {
+    fill: #2196f3;
+  }
+}
+
+.top-contacts__link:hover {
+  color: #2196f3;
+}

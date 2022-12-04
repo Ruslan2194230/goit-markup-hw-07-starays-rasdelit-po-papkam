@@ -1,0 +1,136 @@
+// HERO
+
+.hero {
+  position: relative;
+  display: flex;
+  @extend %center_flex-position;
+  flex-direction: column;
+
+  width: 100%;
+  height: 600px;
+
+  padding: 200px 0px;
+
+  background-image: url(../images/just-svg/hero-background.svg);
+  background-color: rgba(47, 48, 58, 0.4);
+  background-repeat: no-repeat;
+  
+}
+
+.hero__title {
+  text-align: center;
+
+  font-weight: 900;
+  font-size: 44px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  min-width: 696px;
+
+  color: $text-white-color;
+}
+
+.hero__button {
+  @extend%button-style;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hero-form {
+  position: absolute;
+  flex-direction: column;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 528px;
+  padding: 40px;
+
+  background-color: $white-color;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.hero-form__button-cross {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-17px, 18px);
+  cursor: pointer;
+
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: $white-color;
+
+  &:hover .hero-form__button-cross-icon {
+    fill: $hover-color;
+  }
+}
+.hero-form__button-cross-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+
+  @extend%form-icons-size;
+}
+
+.hero-form__header {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.hero-form__field {
+  display: flex;
+  position: relative;
+
+  margin-bottom: 28px;
+  align-items: center;
+}
+
+.hero-form__input {
+  width: 100%;
+  height: 40px;
+  margin: 0;
+  padding: 12px 20px 15px 35px;
+
+  border-radius: 3px;
+  border: 1px solid #212121;
+
+  &:focus + .hero-form__icons,
+  &:focus {
+    fill: $hover-color;
+    border-color: $blue-color;
+  }
+}
+.hero-form__icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @extend%form-icons-size;
+  transform: translate(12px, 10px);
+}
+.hero-form__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-25px);
+}
+
+.agree-link {
+  color: $blue-color;
+  text-decoration: underline;
+}
+
+.hero-form__button-send {
+  @extend%button-style;
+}

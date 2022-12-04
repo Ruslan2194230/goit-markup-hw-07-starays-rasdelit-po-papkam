@@ -1,0 +1,61 @@
+// Button!
+%button-style {
+  width: 200px;
+  height: 50px;
+  padding: 10px 32px;
+
+  font-weight: 700;
+  font-size: 16px;
+
+  background-color: #2196f3;
+  color: #ffffff;
+
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+// Размеры
+%form-icons-size {
+    width: 18px;
+    height: 18px;
+  }
+  
+  %center_flex-position {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  // Font styles
+  %h2-font-styles {
+    font-weight: 700;
+    font-size: 36px;
+  }
+  
+  %h4-font-styles {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  // ANIMATION PLACEHOLDERS
+%hover-underline-block {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+  
+      display: block;
+  
+      width: 100%;
+      height: 5px;
+      background-color: $blue-color;
+  
+      transform: scaleX(0);
+      transition: 250ms;
+    }
+  }
+  %hover-underline-block-animation {
+    &:hover:after {
+      transform: scaleX(1);
+    }
+  }

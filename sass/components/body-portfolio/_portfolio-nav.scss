@@ -1,0 +1,26 @@
+.portfolio-nav__list {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .portfolio-nav__item {
+    padding: 6px 22px;
+    color: #2196f3;
+    border-radius: 4px;
+  }
+  .portfolio-nav__button {
+    padding: 6px 22px;
+    font-style: medium;
+    font-size: 16px;
+  
+    border-radius: 4px;
+  
+    &:hover {
+      color: $white-color;
+      background-color: $hover-color;
+    }
+  
+    &:not(:first-child) {
+      margin-left: 8px;
+    }
+  }

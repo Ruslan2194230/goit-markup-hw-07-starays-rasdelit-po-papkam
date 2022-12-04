@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .hero-form__button-send, .hero__button {
   width: 200px;
   height: 50px;
@@ -42,8 +35,11 @@
   text-transform: uppercase;
 }
 
-body {
-  width: 100%;
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body,
@@ -521,100 +517,37 @@ span {
   border-color: #2196f3;
 }
 
-.footer {
+.portfolio-container {
+  padding: 94px auto;
+}
+
+.portfolio-nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  height: 100%;
-  background-color: #2f303a;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.logo-bottom {
-  margin-bottom: 20px;
-  display: block;
-  width: 231px;
-}
-
-.footer__container {
-  padding: 60px 0 60px 215px;
-  color: #ffffff;
-}
-
-.footer__contacts-item {
-  position: relative;
-}
-.footer__contacts-item:not(:first-child) {
-  display: block;
-  padding-top: 9px;
-  color: rgba(255, 255, 255, 0.6);
-}
-.footer__contacts-item:hover {
-  text-decoration: underline;
-  -webkit-text-decoration-color: #2196f3;
-          text-decoration-color: #2196f3;
-}
-
-.join-us {
-  height: auto;
-  padding-left: 70px;
-  padding-top: 72px;
-}
-
-.join-us__title {
-  margin-bottom: 20px;
-  color: #ffffff;
-}
-
-.social-links__item-footer {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.social-links__icon-footer {
-  fill: #ffffff;
-}
-
-.subscription-container {
-  padding-left: 70px;
-  padding-top: 72px;
-  height: 50px;
-}
-
-.subscription-container__title {
-  color: #ffffff;
-}
-
-.subsription-container__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 20px;
-}
-
-.subscription-container__input {
-  width: 358px;
-  height: 50px;
-  padding-left: 16px;
-  color: #ffffff;
-  background-color: #2f303a;
-  outline: none;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+.portfolio-nav__item {
+  padding: 6px 22px;
+  color: #2196f3;
   border-radius: 4px;
 }
 
-.subscription-container__button {
-  width: 200px;
-  margin-left: 12px;
-  padding: 10px 29px;
+.portfolio-nav__button {
+  padding: 6px 22px;
+  font-style: medium;
   font-size: 16px;
-  background-color: #2196f3;
   border-radius: 4px;
 }
-
-.subscription-container__icon {
-  width: 24px;
-  height: 24px;
-  vertical-align: middle;
+.portfolio-nav__button:hover {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+.portfolio-nav__button:not(:first-child) {
+  margin-left: 8px;
 }
 
 .portfolio-container {
@@ -719,4 +652,100 @@ span {
 .portfolio-grid__image:hover .portfolio-grid__background-image {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #2f303a;
+}
+
+.logo-bottom {
+  margin-bottom: 20px;
+  display: block;
+  width: 231px;
+}
+
+.footer__container {
+  padding: 60px 0 60px 215px;
+  color: #ffffff;
+}
+
+.footer__contacts-item {
+  position: relative;
+}
+.footer__contacts-item:not(:first-child) {
+  display: block;
+  padding-top: 9px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer__contacts-item:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #2196f3;
+          text-decoration-color: #2196f3;
+}
+
+.join-us {
+  height: auto;
+  padding-left: 70px;
+  padding-top: 72px;
+}
+
+.join-us__title {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.social-links__item-footer {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-links__icon-footer {
+  fill: #ffffff;
+}
+
+.subscription-container {
+  padding-left: 70px;
+  padding-top: 72px;
+  height: 50px;
+}
+
+.subscription-container__title {
+  color: #ffffff;
+}
+
+.subsription-container__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.subscription-container__input {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  color: #ffffff;
+  background-color: #2f303a;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.subscription-container__button {
+  width: 200px;
+  margin-left: 12px;
+  padding: 10px 29px;
+  font-size: 16px;
+  background-color: #2196f3;
+  border-radius: 4px;
+}
+
+.subscription-container__icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
 }/*# sourceMappingURL=main.css.map */

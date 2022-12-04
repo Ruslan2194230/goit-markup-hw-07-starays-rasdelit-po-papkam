@@ -1,0 +1,36 @@
+.clients {
+    padding: 94px;
+  }
+  
+  .clients__text {
+    margin-bottom: 50px;
+    text-align: center;
+  
+    @extend%h2-font-styles;
+  }
+  
+  .clients__list {
+    display: flex;
+  
+    width: 1170px;
+    height: 92px;
+  
+    margin: 0 auto;
+  
+    justify-content: space-between;
+  }
+  
+  .clients__item {
+    width: 170px;
+    height: 92px;
+  
+    fill: #afb1b8;
+    // border-color: #afb1b8;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+  
+    &:hover {
+      fill: $hover-color;
+      border-color: $hover-color;
+    }
+  }
