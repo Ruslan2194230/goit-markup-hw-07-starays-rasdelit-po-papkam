@@ -3,14 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  // padding: 0 13.4%; я посчитал что на макете по бокам по 215пикс паддинг по бокам при 1600 ширирне то это являеться 13.4%
 }
-
-// короче пытался чтобы сохранить пропорции размещения дать проценты ну вышло так себе
-// .header-contetnt-div{
-//   display: flex;
-//   justify-content: space-between;
-// }
 
 .header-container__list {
   display: flex;

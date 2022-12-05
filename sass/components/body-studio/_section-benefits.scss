@@ -1,100 +1,96 @@
 // BENEFITS
 .benefits {
-    width: 100%;
-    margin: 0 auto;
+  // width: 100%;
+  // margin: 0 auto;
+  margin-bottom: 94px;
+}
+
+.benefits__list {
+  @extend.benefits;
+  display: flex;
+  justify-content: center;
+
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.benefits__item {
+  max-width: 270px;
+
+  &:not(:first-child) {
+    margin-left: 30px;
   }
-  
-  .benefits__list {
-    @extend.benefits;
-    display: flex;
-    justify-content: center;
-  
-    padding-top: 94px;
-  }
-  
-  .benefits__item {
-    max-width: 270px;
-  
-    &:not(:first-child) {
-      margin-left: 30px;
-    }
-  
-    &::before {
-      display: block;
-      content: "";
-      height: 120px;
-      margin-bottom: 30px;
-      background: contain;
-    }
-  }
-  
-  .icon-antena::before {
-    background-image: url(../images/just-svg/Antenna.svg);
-  }
-  .icon-cloks::before {
-    background-image: url(../images/just-svg/Cloks.svg);
-  }
-  .icon-diagram::before {
-    background-image: url(../images/just-svg/Diagram.svg);
-  }
-  .icon-astronaut::before {
-    background-image: url(../images/just-svg/Astronaut.svg);
-  }
-  
-  .benefits__title {
-    @extend%h4-font-styles;
-  }
-  
-  .benefits__text {
-    padding-top: 10px;
-  
-    color: $main-gray-color;
-  }
-  
-  .specializations__title {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    padding-top: 94px;
-  
-    @extend%h2-font-styles;
-  }
-  .specializations-list {
-    display: flex;
-    width: 100%;
-    height: auto;
-    justify-content: center;
-    padding-top: 50px;
-  }
-  
-  .specialization__item {
-    position: relative;
-    &:not(:first-child) {
-      margin-left: 30px;
-    }
-  }
-  
-  .specializations__img {
-    width: 370px;
-    height: 294px;
-  }
-  
-  .specialization__description {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(0px, 225px);
-    display: flex;
-    @extend%center_flex-position;
-  
-    width: 370px;
-    height: 70px;
-  
-    color: $white-color;
-    background-color: rgba(47, 48, 58, 0.8);
-  }
-  
-  .specialization__text {
-    @extend%h4-font-styles;
+
+  &::before {
     display: block;
+    content: "";
+    height: 120px;
+    margin-bottom: 30px;
+    background: contain;
   }
+}
+
+.icon-antena::before {
+  background-image: url(../images/just-svg/Antenna.svg);
+}
+.icon-cloks::before {
+  background-image: url(../images/just-svg/Cloks.svg);
+}
+.icon-diagram::before {
+  background-image: url(../images/just-svg/Diagram.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../images/just-svg/Astronaut.svg);
+}
+
+.benefits__title {
+  @extend%h4-font-styles;
+}
+
+.benefits__text {
+  padding-top: 10px;
+
+  color: $main-gray-color;
+}
+
+.specializations__title {
+  @extend%h2-font-styles;
+}
+.specializations-list {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
+.specialization__item {
+  position: relative;
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+.specializations__img {
+  width: 370px;
+  height: 294px;
+}
+
+.specialization__description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0px, 225px);
+  display: flex;
+  @extend%center_flex-position;
+
+  width: 370px;
+  height: 70px;
+
+  color: $white-color;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.specialization__text {
+  @extend%h4-font-styles;
+  display: block;
+}

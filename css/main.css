@@ -26,6 +26,8 @@
 }
 
 .clients__text, .team-container__title, .specializations__title {
+  text-align: center;
+  padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
 }
@@ -212,10 +214,6 @@ span {
   padding: 40px;
   background-color: #ffffff;
   border-radius: 4px;
-  -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-          box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
@@ -295,8 +293,7 @@ span {
 }
 
 .benefits, .benefits__list {
-  width: 100%;
-  margin: 0 auto;
+  margin-bottom: 94px;
 }
 
 .benefits__list {
@@ -307,6 +304,7 @@ span {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .benefits__item {
@@ -344,13 +342,6 @@ span {
   color: #757575;
 }
 
-.specializations__title {
-  width: 100%;
-  height: auto;
-  text-align: center;
-  padding-top: 94px;
-}
-
 .specializations-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -360,7 +351,6 @@ span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 50px;
 }
 
 .specialization__item {
@@ -395,15 +385,10 @@ span {
 }
 
 .team-container {
-  width: 100%;
-  height: auto;
-  margin-top: 94px;
-  padding: 94px auto;
+  padding-bottom: 94px;
+  padding-top: 94px;
+  margin: 0 auto;
   background-color: #f5f4fa;
-}
-
-.team-container__title {
-  text-align: center;
 }
 
 .team-container__list {
@@ -411,8 +396,9 @@ span {
   display: -ms-flexbox;
   display: flex;
   height: auto;
-  margin: 0 auto;
-  padding: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .team-container__card {
@@ -428,6 +414,11 @@ span {
 .team-container__card:not(:first-child) {
   width: 94.37%/3;
   margin-left: 30px;
+}
+
+.team-container__foto {
+  width: 270px;
+  height: 260px;
 }
 
 .team-container__name {
@@ -486,11 +477,6 @@ span {
 
 .clients {
   padding: 94px;
-}
-
-.clients__text {
-  margin-bottom: 50px;
-  text-align: center;
 }
 
 .clients__list {
@@ -639,7 +625,6 @@ span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* padding: 63px 24px; */
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
